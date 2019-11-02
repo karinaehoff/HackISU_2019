@@ -1,0 +1,75 @@
+/*  
+    Color Palette
+    Black: rgb(15, 25, 27). Use for Night Mode (default)
+    Maroon: rgb(68, 31, 49). Use undetermined.
+    Cranberry: rgb(132, 20, 68). Use undertermined.
+    Peach: rgb(237, 102, 109). Use undertermined.
+    Dark Aqua: rgb(21, 119, 135). Use for links.
+    Light Gray: rgb(230, 230, 232). Use for Light Mode.
+*/
+
+/* Links */
+a:link {
+    color: rgb(21, 119, 135);
+    font-family: 'Montserrat', sans-serif;
+}
+a:visited {
+    color: rgb(132, 20, 68);
+}
+a:hover {
+    color: rgb(237, 102, 109);
+}
+
+/* Text */
+p {
+    color: rgb(230, 230, 232);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Body (Background) */
+body {
+    background-color: rgb(15, 25, 27);
+    color: rgb(230, 230, 232);
+}
+
+
+/* IDs */
+
+#animationZone {
+    background-color: rgb(237, 102, 109);
+    padding: 15px;
+}
+
+#mainContent {
+    padding: 15px;
+}
+
+#mainPage {
+    background-color: black;
+    width: 100%;
+    padding-left: 115px;
+    height: 100vh;
+}
+
+#root {
+    padding: 0px;
+}
+
+#sideNav {
+    background-color: rgb(230, 230, 232);
+    width: 20%;
+    max-width: 100px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+#siteTitle {
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    color: rgb(21, 119, 135);
+}
+
+#siteTitle:hover {
+    color: rgb(237, 102, 109) ;
+}
