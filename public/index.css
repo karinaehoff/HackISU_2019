@@ -42,13 +42,14 @@ body {
 
 #mainContent {
     padding: 15px;
+    height: 75vh;
 }
 
 #mainPage {
     background-color: black;
     width: 100%;
     padding-left: 115px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #root {

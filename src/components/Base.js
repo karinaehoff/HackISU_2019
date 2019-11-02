@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import Sketch from './react-sketch.js';
+
+// import Sketch from './react-sketch.js';
 
 class Base extends React.Component {
     render() {
@@ -11,15 +12,16 @@ class Base extends React.Component {
                 </Col>
                 <Col id="mainPage">
                     <Row id="animationZone">
-                        <p>Animation Zone</p>
+                        <p>Animation zone.</p>
                     </Row>
                     <Row>
-                        <Sketch />
+                        <div id="canvas"></div>
+                        {/* <Sketch /> */}
                     </Row>
                     <Row id="mainContent">
                         <p>main content here.</p>
-                        <div id="sketch"></div>
                     </Row>
+                    
                 </Col>
             </div>
         )
