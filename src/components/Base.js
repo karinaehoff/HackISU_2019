@@ -18,9 +18,9 @@ class Base extends React.Component {
                         <div id="canvas"></div>
                         {/* <Sketch /> */}
                     </Row>
-                    <Row id="mainContent">
+                    {/* <Row id="mainContent">
                         <p>main content here.</p>
-                    </Row>
+                    </Row> */}
                     
                 </Col>
             </div>
