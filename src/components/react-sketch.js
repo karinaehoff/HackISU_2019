@@ -22,7 +22,7 @@ export default function Sketch(p) {
     };
 
     p.setup = function() {
-        p.createCanvas(p.windowWidth, 100);
+        p.createCanvas(window.innerWidth, 100);
         p.background(21, 119, 135);
         
         for (var i = 0; i < numberOfParticles; i++) {

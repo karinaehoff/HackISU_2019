@@ -34,6 +34,14 @@ body {
 
 
 /* IDs */
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+#base{
+    height: 90vh;
+}
 
 #animationZone {
     background-color: rgb(237, 102, 109);
@@ -42,12 +50,11 @@ body {
 
 #mainContent {
     padding: 15px;
-    height: 75vh;
 }
 
 #mainPage {
     background-color: black;
-    width: 100%;
+    width: 100vw;
     padding-left: 115px;
     /* height: 100vh; */
 }
@@ -62,6 +69,8 @@ body {
     max-width: 100px;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
