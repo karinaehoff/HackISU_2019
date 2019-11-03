@@ -1,49 +1,47 @@
-function Sketch() {
+export default function Sketch(p) {
     let particleArray = [];
 
     let numberOfParticles = 500;
 
-    function Particle(x, y) {
-        this.dir = createVector(0, 0);
-        this.vel = createVector(0, 0);
-        this.pos = createVector(x, y);
+    p.Particle = function (x, y) {
+        this.dir = p.createVector(0, 0);
+        this.vel = p.createVector(0, 0);
+        this.pos = p.createVector(x, y);
         
         this.move = function() {
-            this.dir.x+=random(-1, 1);
-            this.dir.y+=random(-1, 1);
+            this.dir.x+=p.random(-1, 1);
+            this.dir.y+=p.random(-1, 1);
             this.vel = this.dir.copy();
             this.vel.mult(0.5);
             this.pos.add(this.vel);
         };
         
         this.display = function(r) {
-            ellipse(this.pos.x, this.pos.y, r, r);
+            p.ellipse(this.pos.x, this.pos.y, r, r);
         };
     };
 
-    function setup() {
-        createCanvas(windowWidth, 100);
-        background(21, 119, 135);
+    p.setup = function() {
+        p.createCanvas(p.windowWidth, 100);
+        p.background(21, 119, 135);
         
         for (var i = 0; i < numberOfParticles; i++) {
-            particleArray[i] = new Particle(random(0, width), random(0, height));
+            particleArray[i] = new p.Particle(p.random(0, p.width), p.random(0, p.height));
         };
     };
 
 
-    function draw() {
-        noStroke();
+    p.draw = function() {
+        p.noStroke();
         
         for (var i = 0; i < numberOfParticles; i++) {
-            var radius = map(i, 0, numberOfParticles, 1, 2);
-            var alpha = map(i, 0, numberOfParticles, 0, 250);
+            var radius = p.map(i, 0, numberOfParticles, 1, 2);
+            var alpha = p.map(i, 0, numberOfParticles, 0, 250);
             
-            fill(255, alpha);
+            p.fill(255, alpha);
             particleArray[i].move();
             particleArray[i].display(radius);
             
         };
     };
 }
-
-export default Sketch;

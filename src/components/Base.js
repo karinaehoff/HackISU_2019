@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import P5Wrapper from 'react-p5-wrapper';
 
-// import Sketch from './react-sketch.js';
+import Sketch from './react-sketch.js';
 
 class Base extends React.Component {
     render() {
@@ -15,12 +16,11 @@ class Base extends React.Component {
                         <p>Animation zone.</p>
                     </Row>
                     <Row>
-                        <div id="canvas"></div>
-                        {/* <Sketch /> */}
+                        <P5Wrapper sketch={Sketch} />
                     </Row>
-                    {/* <Row id="mainContent">
+                    <Row id="mainContent">
                         <p>main content here.</p>
-                    </Row> */}
+                    </Row>
                     
                 </Col>
             </div>
